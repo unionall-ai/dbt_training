@@ -36,3 +36,7 @@ azerconnect:
       pass: mypassword
       dbname: mydatabase
       schema: public  # This is the default schema, change if you use a different one
+
+
+jhghc
+
