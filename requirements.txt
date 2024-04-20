@@ -3,5 +3,4 @@ sqlfluff==2.3.5
 sqlfluff-templater-dbt==2.3.5
 pipx==1.4.3
 dbt-osmosis==0.12.6
-python-dotenv==1.0.1
-azure-storage-blob==12.19.1
+jafgen==0.4.12

@@ -15,7 +15,7 @@ profile: 'azerconnect'
 model-paths: ["models"]
 analysis-paths: ["analyses"]
 test-paths: ["tests"]
-seed-paths: ["seeds"]
+seed-paths: ["seeds", "jaffle-data"]
 macro-paths: ["macros"]
 snapshot-paths: ["snapshots"]
 
@@ -23,6 +23,10 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "target"
   - "dbt_packages"
 
+
+seeds:
+  jaffle_shop:
+    +schema: raw
 
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
@@ -33,5 +37,9 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   azerconnect:
     # Config indicated by + and applies to all files under models/example/
-    example:
+    staging:
+      +schema: staging
       +materialized: view
+    marts:
+      +schema: marts
+      +materialized: table
