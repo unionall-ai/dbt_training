@@ -1,6 +1,8 @@
 # VSCode
 .vscode/
-.csv
+
+# remove seedfiles
+*.csv
 
 # dbt artifacts
 /target/

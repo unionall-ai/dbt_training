@@ -29,7 +29,7 @@ azerconnect:
   outputs:
     dev:
       type: postgres
-      threads: 1
+      threads: 4
       host: localhost
       port: 5432
       user: myuser
@@ -38,5 +38,4 @@ azerconnect:
       schema: public  # This is the default schema, change if you use a different one
 
 
-jhghc
 
