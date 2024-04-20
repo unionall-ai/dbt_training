@@ -1,0 +1,52 @@
+# VSCode
+.vscode/
+
+# dbt artifacts
+/target/
+/dbt_modules/
+dbt_packages/
+
+# postgres database
+postgres-data/
+
+# dbt logs
+/log/ 
+
+# dbt configurations
+/profiles.yml
+
+# dbt dependencies
+/analysis/deps/
+
+# dbt run results
+/run/
+
+# Virtual environment
+/.venv/
+
+# macOS system files
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Compiled source
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Logs and databases
+*.log
+*.sqlite
+*.db
+
+# OS generated files
+ehthumbs.db
+Icon?
+Thumbs.db
