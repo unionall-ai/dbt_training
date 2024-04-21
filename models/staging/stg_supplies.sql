@@ -11,7 +11,7 @@ renamed as (
     select
 
         ----------  ids
-        {{ generate_bkey(['id', 'sku']) }} as supply_uuid,
+        coalesce(lower(cast(id as text)), '') || '_' || coalesce(lower(cast(sku as text)), '') as supply_uuid,
         id as supply_id,
         sku as product_id,
 
