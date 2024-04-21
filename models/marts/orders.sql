@@ -1,11 +1,3 @@
-{{
-  config(
-    materialized = 'incremental',
-    incremental_strategy = 'merge',
-    unique_key = 'order_id',
-    )
-}}
-
 with
 
 orders as (
@@ -84,10 +76,3 @@ customer_order_count as (
 
 select * 
 from customer_order_count
-{% if is_incremental() %}
-
-  -- this filter will only be applied on an incremental run
-  -- (uses >= to include records whose timestamp occurred since the last run of this model)
-  where ordered_at >= (select max(ordered_at) from {{ this }})
-
-{% endif %}
