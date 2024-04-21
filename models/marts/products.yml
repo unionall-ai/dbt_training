@@ -1,4 +1,0 @@
-models:
-  #The name of the semantic model.
-  - name: products
-    description: Product dimension table. The grain of the table is one row per product.

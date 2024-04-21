@@ -40,9 +40,6 @@ seeds:
 models:
   azerconnect:
     # Config indicated by + and applies to all files under models/example/
-    staging:
-      +schema: staging
-      +materialized: view
+    staging:    
     marts:
-      +schema: marts
-      +materialized: table
+      
