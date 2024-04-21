@@ -1,3 +1,9 @@
+{{ config(   
+    indexes=[
+      {'columns': ['customer_id'], 'type': 'btree', 'unique': True},   
+    ]
+)}}
+
 with
 
 customers as (
