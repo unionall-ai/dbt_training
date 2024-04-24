@@ -33,6 +33,8 @@ jobs:
       - name: Setup dbt
         run: |
           pip install dbt-postgres
+          pip install jafgen
+          jafgen
           mkdir -p ~/.dbt
           mv .github/profiles/profiles.yml ~/.dbt/profiles.yml
           dbt deps
