@@ -27,6 +27,7 @@ jobs:
 
       - name: Setup Postgres
         run: |
+          mkdir -p ./postgres-data
           docker-compose up -d
       # Runs a single command using the runners shell
       - name: Setup dbt
