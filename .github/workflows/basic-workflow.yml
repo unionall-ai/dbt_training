@@ -34,6 +34,7 @@ jobs:
           pip install dbt-postgres
           mkdir -p ~/.dbt
           mv .github/profiles/profiles.yml ~/.dbt/profiles.yml
+          dbt deps
 
       - name: Run dbt
         run: |
