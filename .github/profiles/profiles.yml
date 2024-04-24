@@ -1,0 +1,12 @@
+azerconnect:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      threads: 4
+      host: localhost
+      port: 5432
+      user: myuser
+      pass: mypassword
+      dbname: mydatabase
+      schema: public  # This is the default schema, change if you use a different one
