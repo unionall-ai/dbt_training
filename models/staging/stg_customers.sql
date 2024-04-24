@@ -11,7 +11,7 @@ renamed as (
     select
 
         ----------  ids
-        id as customer_id,
+        'fixed_incorrect_id' as customer_id,
 
         ---------- text
         name as customer_name
